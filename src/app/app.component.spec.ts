@@ -43,5 +43,8 @@ describe('AppComponent', () => {
   });
 
   // TODO: add more tests!
+  it('Cypress tests', () => {
+    cy.visit('/');
+  })
 
 });
