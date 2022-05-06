@@ -31,20 +31,20 @@ describe('AppComponent', () => {
   it('should create the app', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app).toBeTruthy();
+    expect(app).true;
   });
 
   it('should initialize the app', async () => {
     TestBed.createComponent(AppComponent);
-    expect(platformSpy.ready).toHaveBeenCalled();
+    expect(platformSpy.ready).Arguments("Platform Spy ready").calledImmediatelyBefore;
     await platformReadySpy;
-    expect(statusBarSpy.styleDefault).toHaveBeenCalled();
-    expect(splashScreenSpy.hide).toHaveBeenCalled();
+    expect(statusBarSpy.styleDefault).calledImmediatelyAfter;
+    expect(splashScreenSpy.hide).respondTo;
   });
 
   // TODO: add more tests!
   it('Cypress tests', () => {
-    cy.visit('/');
+    cy.visit('/', { timeout: 30000 });
   })
 
 });

@@ -1,3 +1,6 @@
 {
-  "projectId": "k7wb6c"
+  "projectId": "k7wb6c",
+  "baseUrl": "http://localhost:8888",
+  "blacklistHosts": [],
+  "include": ["**/*.ts"]
 }
