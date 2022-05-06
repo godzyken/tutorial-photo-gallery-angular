@@ -1,4 +1,4 @@
-package io.ionic.demo.pg.cap.ng;
+package io.godzy.ionic.course.app;
 
 import com.getcapacitor.BridgeActivity;
 
