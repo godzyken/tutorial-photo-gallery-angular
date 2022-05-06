@@ -10,7 +10,6 @@ let AppModule = class AppModule {
 AppModule = __decorate([
     NgModule({
         declarations: [AppComponent],
-        entryComponents: [],
         imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
         providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
         bootstrap: [AppComponent]
